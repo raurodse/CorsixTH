@@ -3,7 +3,8 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-export WITH_LIBAV=ON
-export WITH_FREETYPE2=OFF
 %:
 	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- --WITH_LIBAV=ON
