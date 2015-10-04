@@ -7,4 +7,4 @@
 	dh $@ --buildsystem=cmake
 
 override_dh_auto_configure:
-	dh_auto_configure -- --WITH_LIBAV=ON
+	dh_auto_configure -- -DWITH_LIBAV=ON
