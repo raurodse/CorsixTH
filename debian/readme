@@ -1,0 +1,7 @@
+Hay que crear los siguientes links
+
+ln -s /usr/lib/libmythswresample.so /usr/lib/libswresample.so.0
+ln -s /usr/lib/libmythswresample.so /usr/lib/libswresample.so
+ln -s /usr/include/mythtv/libswresample/swresample.h /usr/include/libswresample/swresample.h
+
+Hay que crear el directorio /usr/include/libswresample
