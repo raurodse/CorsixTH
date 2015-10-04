@@ -7,4 +7,4 @@
 	dh $@ --buildsystem=cmake
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DWITH_LIBAV=ON -DWITH_FREETYPE2=OFF -DCMAKE_INSTALL_PREFIX=/usr/share
+	dh_auto_configure -- -DWITH_LIBAV=ON -DWITH_FREETYPE2=OFF -DCMAKE_INSTALL_PREFIX=/usr/share -DLUA_INCLUDE_DIR=/usr/include/lua5.1 -DLUA_LIBRARY=/usr/lib/x86_64-linux-gnu/liblua5.1.so
